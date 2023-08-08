@@ -90,7 +90,7 @@ const updateProductGallery = asyncHandler(async (req, res) => {
   }
   const images_path = [];
   const files = req.files;
-  const base_path = `${req.protocol}://${req.get("host")}/public/upload/`;
+  const base_path = `${req.protocol}://${req.get("host")}/api/public/upload/`;
   for (const file of files) {
     let image_file_name = file.filename;
     let base_paths = `${base_path}${image_file_name}`;
