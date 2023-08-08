@@ -30,6 +30,7 @@ module.exports = createLogger({
       level: "error",
       //mongo database connection link
       db: process.env.DB_URI_LOGS,
+      dbName:"myEshopApiDB",
       options: {
         useUnifiedTopology: true,
       },
