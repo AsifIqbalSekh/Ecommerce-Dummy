@@ -40,7 +40,7 @@ app.get(["/", "/myLogs"], async (req, res) => {
   res
     .status(201)
     .json({
-      msg: "Homepage Configure Perfectly! Below Are Log Data",
+      msg: "Homepage Configure Perfectly! Below Are Log Data(Designed By SK Asif Iqbal)",
       length:log_data.length,
       Data: log_data,
     });
