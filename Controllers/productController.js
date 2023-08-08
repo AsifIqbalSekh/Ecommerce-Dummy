@@ -50,7 +50,7 @@ const postProduct = asyncHandler(async (req, res) => {
     const image_file_name = req.file.filename;
     base_path = `${req.protocol}://${req.get(
       "host"
-    )}/public/upload/${image_file_name}`;
+    )}/api/public/upload/${image_file_name}`;
   }
 
   const new_product = await product_tbl.create({
