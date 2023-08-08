@@ -11,11 +11,20 @@ const infoFilter = format((info, opts) => {
   return info.level === "info" ? info : false;
 });
 
+const logDir = 'logs';
+const fs = require('fs');
+
+if (!fs.existsSync(logDir)) {
+  fs.mkdirSync(logDir);
+ }
+
+
+
 module.exports = createLogger({
   transports: [
     // File transport
     new transports.File({
-      filename: "logs/server.log",
+      filename: `${logDir}/server.log`,
       format: format.combine(
         format.timestamp({ format: "MMM-DD-YYYY HH:mm:ss" }),
         format.align(),
