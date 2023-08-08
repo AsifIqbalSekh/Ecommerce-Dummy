@@ -1,0 +1,102 @@
+{
+  "category": {
+    "post_category": [
+      {
+        "name": "mobile",
+        "color": "mobile-color",
+        "icon": "mobile-icon"
+      },
+      {
+        "name": "laptop",
+        "color": "laptop-color",
+        "icon": "laptop-icon"
+      },
+      {
+        "name": "desktop",
+        "color": "desktop-color",
+        "icon": "desktop-icon"
+      }
+    ],
+    "update_category": [
+      {
+        "icon": "icon-updated",
+        "color": "color-updated"
+      }
+    ]
+  },
+  "product": {
+    
+    "post_product": [
+      {
+        "name": "apple macbook",
+        "description": "Apple black color",
+        "category": "643ee1ce7b251dd155460819",
+        "countInStock": 10,
+        "price": 800000
+      },
+      {
+        "name": "dell latitude",
+        "description": "Dell white color",
+        "category": "643ee1ce7b251dd155460819",
+        "countInStock": 100,
+        "price": 500000
+      },
+      {
+        "name": "iphone 12",
+        "description": "iphone black color",
+        "category": "643ee1af7b251dd155460815",
+        "countInStock": 8,
+        "price": 45000,
+        "isFeatured": true
+      },
+      {
+        "name": "mi probook desktop",
+        "description": "desktop black color",
+        "category": "643ee1d87b251dd15546081d",
+        "countInStock": 8,
+        "price": 35000,
+        "isFeatured": true
+      }
+    ]
+  },
+  "user": {
+    "id": "643ee099e31da9f3b74fc7d8",
+    "post_user": [
+      {
+        "name": "Sk Asif Iqbal",
+        "email": "skasifiqbal786@gmail.com",
+        "phone": "7003483743",
+        "password": "asif@123",
+        "isAdmin": true,
+        "address": {
+          "locality": "tarakeswar",
+          "landmark": "madartola",
+          "city": "Hooghly",
+          "zip": 712410,
+          "country": "India"
+        }
+      },
+      {
+        "name": "Rahana Parvin",
+        "email": "rahanaparvin@gmail.com",
+        "phone": "706778950",
+        "isAdmin": false,
+        "password": "rahana@123",
+        "address": {
+          "locality": "tarakeswar",
+          "landmark": "madartola",
+          "city": "Hooghly",
+          "zip": 712410,
+          "country": "India"
+        }
+      },
+      {
+        "name": "Ratul Roy",
+        "email": "ratulroy@gmail.com",
+        "phone": "7067789786",
+        "isAdmin": false,
+        "password": "ratul@123"
+      }
+    ]
+  }
+}
