@@ -12,11 +12,8 @@ const infoFilter = format((info, opts) => {
 });
 
 const logDir = 'logs';
-const fs = require('fs');
-
-if (!fs.existsSync(logDir)) {
-  fs.mkdirSync(logDir);
- }
+const path=require("path")
+const file_name=path.join(__dirname,logDir,'server.log')
 
 
 
@@ -24,7 +21,7 @@ module.exports = createLogger({
   transports: [
     // File transport
     new transports.File({
-      filename: `${logDir}/server.log`,
+      filename: file_name,
       format: format.combine(
         format.timestamp({ format: "MMM-DD-YYYY HH:mm:ss" }),
         format.align(),
