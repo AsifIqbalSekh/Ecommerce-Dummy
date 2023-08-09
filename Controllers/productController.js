@@ -18,7 +18,7 @@ const storage = multer.diskStorage({
     if (isValid) {
       uploadError = null;
     }
-    cb(uploadError, "public/upload");
+    cb(uploadError, "/public/upload");
   },
   filename: function (req, file, cb) {
     const file_name = file.originalname.split(".")[0].replace(" ", "_");

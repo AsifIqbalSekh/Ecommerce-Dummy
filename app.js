@@ -26,6 +26,7 @@ app.use("/user", require("./Routes/userRoutes.js"));
 app.use("/order", require("./Routes/orderRoutes.js"));
 //For fetching uploaded Images
 app.use("/public/upload", express.static(__dirname + "/public/upload"));
+app.use("/public/upload", "/public/upload");
 //handle error -> this should be the last line in middleware section
 app.use(errorHandaler);
 
