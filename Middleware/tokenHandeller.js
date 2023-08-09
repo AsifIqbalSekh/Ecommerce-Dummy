@@ -6,6 +6,7 @@ const asyncHandler = require("express-async-handler");
 const validateJwtToken = asyncHandler(async (req, res, next) => {
   let header = req.headers.authorization;
   if (!header) {
+    res.status(500);
     throw new Error("Token Is Missing");
   }
   if (header.startsWith("Bearer")) {
