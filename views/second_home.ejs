@@ -13,7 +13,8 @@
         <ul list-style-type: square>
             <li> <%=data[index].level %> </li>
             <li> <%=data[index].message %> </li>
-            <li> <%-data[index].message %> </li>
+            <li> <%= typeof data[index]%> </li>
+            <li> <%=data[index] %> </li>
         </ul>
     <% } %>
 </body>
