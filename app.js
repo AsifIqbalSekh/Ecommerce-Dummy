@@ -65,14 +65,14 @@ app.get("/homeFirst", async (req, res) => {
 // Testing Homepage-2 with Dynamic homepage EJS
 
 app.get("/homeSecond", async (req, res) => {
-  // const log_tbl = mongoose.models.server_logs|| mongoose.model(
-  //   "server_logs",
-  //   new mongoose.Schema({ name: String })
-  // );
-  // const log_data = await log_tbl.find();
+  const log_tbl = mongoose.models.server_logs|| mongoose.model(
+    "server_logs",
+    new mongoose.Schema({ name: String })
+  );
+  const log_data = await log_tbl.find();
   res
     .status(200)
-    .render('second_home')
+    .render('second_home',{data:log_data})
 });
 
 
