@@ -30,7 +30,7 @@ app.use("/public/upload", express.static("/public/upload"));
 //handle error -> this should be the last line in middleware section
 app.use(errorHandaler);
 
-//Testing Homepage
+//Testing Homepage-1
 
 app.get(["/", "/myLogs"], async (req, res) => {
   const log_tbl = mongoose.models.server_logs|| mongoose.model(
@@ -39,13 +39,28 @@ app.get(["/", "/myLogs"], async (req, res) => {
   );
   const log_data = await log_tbl.find();
   res
-    .status(201)
+    .status(200)
     .json({
       msg: "Homepage Configure Perfectly! Below Are Log Data(Designed By SK Asif Iqbal)",
       length:log_data.length,
       Data: log_data,
     });
 });
+
+// Testing Homepage-2 with static homepage
+
+app.get("/homeFirst", async (req, res) => {
+  // const log_tbl = mongoose.models.server_logs|| mongoose.model(
+  //   "server_logs",
+  //   new mongoose.Schema({ name: String })
+  // );
+  // const log_data = await log_tbl.find();
+  res
+    .status(200)
+    .sendFile(process.cwd()+"/View/first_home.html")
+});
+
+
 
 //Driver Code
 app.listen(process.env.PORT, () => {
