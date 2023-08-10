@@ -69,7 +69,7 @@ app.get("/homeSecond", async (req, res) => {
     "server_logs",
     new mongoose.Schema({ name: String })
   );
-  const log_data = await log_tbl.find();
+  const log_data = await log_tbl.find().toObject();
   res
     .status(200)
     .render('second_home',{data:log_data})
