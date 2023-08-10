@@ -48,14 +48,9 @@ app.get(["/", "/myLogs"], async (req, res) => {
     });
 });
 
-// Testing Homepage-2 with static homepage
+// Testing Homepage-1 with static homepage
 
 app.get("/homeFirst", async (req, res) => {
-  // const log_tbl = mongoose.models.server_logs|| mongoose.model(
-  //   "server_logs",
-  //   new mongoose.Schema({ name: String })
-  // );
-  // const log_data = await log_tbl.find();
   res
     .status(200)
     .sendFile(process.cwd()+"/views/first_home.html")
