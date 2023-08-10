@@ -7,10 +7,11 @@
 </head>
 <body>
     <h1>Welcome to My Ecommerce API Dynamic HomePage!</h1>
-    <% for (const item of data) { %>
-        <ul>
-            <li> <%= item['level'] %> </li>
+    <% data.forEach(item => {%>
+        <ul list-style-type: square>
+            <li> <%= item.level %> </li>
+            <li> <%= item.message %> </li>
         </ul>
-    <% } %>
+    <% }) %>
 </body>
 </html>
