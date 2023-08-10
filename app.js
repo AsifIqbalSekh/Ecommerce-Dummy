@@ -5,7 +5,6 @@ const connectDB = require("./Config/dbConnection");
 const errorHandaler = require("./Middleware/errorHandaler");
 const cors = require("cors"); //for trust cross origin platform access our api
 const mongoose = require("mongoose");
-const ejs=require('ejs')
 
 // keep this under your error handler
 
@@ -20,7 +19,7 @@ app.options("*", cors()); //for trust all(*) http options during accessing our a
 
 app.use(morgan("tiny")); //log endpoint history
 app.use(express.json()); //inbuilt request body parser to json
-app.set('view engine','ejs')
+
 
 app.use("/category", require("./Routes/categoryRoutes.js"));
 app.use("/product", require("./Routes/productRoutes.js"));
@@ -61,20 +60,6 @@ app.get("/homeFirst", async (req, res) => {
     .status(200)
     .sendFile(process.cwd()+"/views/first_home.html")
 });
-
-// Testing Homepage-2 with Dynamic homepage EJS
-
-app.get("/homeSecond", async (req, res) => {
-  const log_tbl = mongoose.models.server_logs|| mongoose.model(
-    "server_logs",
-    new mongoose.Schema({ name: String })
-  );
-  const log_data = await log_tbl.find();
-  res
-    .status(200)
-    .render('second_home',{data:log_data})
-});
-
 
 
 //Driver Code
