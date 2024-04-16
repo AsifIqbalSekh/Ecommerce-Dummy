@@ -284,7 +284,7 @@ const deleteUser = asyncHandler(async (req, res) => {
     throw new Error("User Id Not Valid");
   }
 
-  if (req.user.id !== req.params.id && !req.user.isAdmin) {
+  if (req.user.id !== req.params.id && !req.user.userRole.includes(ROLE_LIST.Admin)) {
     res.status(400);
     throw new Error("User Can't Delete Other's Acc");
   }

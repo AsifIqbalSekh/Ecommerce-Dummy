@@ -18,7 +18,7 @@ const storage = multer.diskStorage({
     if (isValid) {
       uploadError = null;
     }
-    cb(uploadError, "/public/upload");
+    cb(uploadError, "public/upload");
   },
   filename: function (req, file, cb) {
     const file_name = file.originalname.split(".")[0].replace(" ", "_");
@@ -50,7 +50,7 @@ const postProduct = asyncHandler(async (req, res) => {
     const image_file_name = req.file.filename;
     base_path = `${req.protocol}://${req.get(
       "host"
-    )}/api/public/upload/${image_file_name}`;
+    )}/public/upload/${image_file_name}`;
   }
 
   const new_product = await product_tbl.create({
@@ -90,7 +90,7 @@ const updateProductGallery = asyncHandler(async (req, res) => {
   }
   const images_path = [];
   const files = req.files;
-  const base_path = `${req.protocol}://${req.get("host")}/api/public/upload/`;
+  const base_path = `${req.protocol}://${req.get("host")}/public/upload/`;
   for (const file of files) {
     let image_file_name = file.filename;
     let base_paths = `${base_path}${image_file_name}`;

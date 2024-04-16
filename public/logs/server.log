@@ -1,0 +1,42 @@
+error: Apr-16-2024 23:57:52: 	401 - Token Validation Failed, User Not Authorized - /user - GET - ::1
+info: Apr-16-2024 23:58:23: 	200 - Admin: skasifiqbal786@gmail.com - View All The List Of User - /user - GET - ::1
+error: Apr-17-2024 00:00:41: 	400 - Unauthorized Role - /user - GET - ::1
+info: Apr-17-2024 00:01:04: 	200 - Admin: skasifiqbal786@gmail.com - View All The List Of User - /user - GET - ::1
+info: Apr-17-2024 00:09:19: 	200 - Admin: skasifiqbal786@gmail.com - View All The List Of User - /user - GET - ::1
+error: Apr-17-2024 00:19:11: 	401 - Token Validation Failed, User Not Authorized - /user/changeRole?id=661ec7c86c68ee4528731599 - PUT - ::1
+error: Apr-17-2024 00:22:09: 	401 - Token Validation Failed, User Not Authorized - /user/661ec7c86c68ee4528731599 - DELETE - ::1
+error: Apr-17-2024 00:22:16: 	400 - User Can't Delete Other's Acc - /user/661ec7c86c68ee4528731599 - DELETE - ::1
+info: Apr-17-2024 00:28:33: 	200 - Admin: skasifiqbal786@gmail.com - View All The List Of User - /user - GET - ::1
+error: Apr-17-2024 00:31:29: 	400 - User Can't Delete Other's Acc - /user/661ec7c86c68ee4528731599 - DELETE - ::1
+info: Apr-17-2024 00:39:33: 	200 - Admin: skasifiqbal786@gmail.com - View All The List Of User - /user - GET - ::1
+info: Apr-17-2024 00:40:53: 	200 - Admin: skasifiqbal786@gmail.com - View All The List Of User - /user - GET - ::1
+error: Apr-17-2024 00:41:41: 	404 - Profile Not Found - /user/changeRole?id=661ec7c86c68ee4528731599 - PUT - ::1
+error: Apr-17-2024 01:16:39: 	200 - ENOENT: no such file or directory, open '/public/upload/Screenshot_2024-04-17 at 1_1713296799518.png' - /product - POST - ::1
+error: Apr-17-2024 01:23:51: 	200 - ENOENT: no such file or directory, open 'public/upload/Screenshot_2024-04-17 at 1_1713297231245.png' - /product - POST - ::1
+error: Apr-17-2024 01:24:56: 	200 - ENOENT: no such file or directory, open '${__dirname}/public/upload/Screenshot_2024-04-17 at 1_1713297296122.png' - /product - POST - ::1
+error: Apr-17-2024 01:25:54: 	200 - ENOENT: no such file or directory, open '/Users/skasifiqbal/Desktop/BackEnd Node JS/Project-2024/Ecommerce-Dummy/Controllers/public/upload/Screenshot_2024-04-17 at 1_1713297354780.png' - /product - POST - ::1
+error: Apr-17-2024 01:38:20: 	200 - ENOENT: no such file or directory, open 'public/upload/Screenshot_2024-04-17 at 1_1713298100599.png' - /product - POST - ::1
+error: Apr-17-2024 01:39:27: 	200 - ENOENT: no such file or directory, open 'public/upload/Screenshot_2024-04-17 at 1_1713298167267.png' - /product - POST - ::1
+error: Apr-17-2024 01:39:48: 	200 - ENOENT: no such file or directory, open 'public/upload/Screenshot_2024-04-17 at 1_1713298188784.png' - /product - POST - ::1
+error: Apr-17-2024 01:53:47: 	401 - Token Validation Failed, User Not Authorized - /product/64d31bc5f51e550837dc6fe6 - DELETE - ::1
+error: Apr-17-2024 01:53:54: 	200 - ENOENT: no such file or directory, unlink 'http://16.171.194.225/api/public/upload/test-image_1691556805243.png' - /product/64d31bc5f51e550837dc6fe6 - DELETE - ::1
+error: Apr-17-2024 01:54:40: 	200 - ENOENT: no such file or directory, unlink 'http://16.171.142.31/api/public/upload/test-image_1691524874445.png' - /product/64d29f0a8c1bdbe10aaa65da - DELETE - ::1
+error: Apr-17-2024 01:54:56: 	200 - ENOENT: no such file or directory, unlink 'http://16.171.142.31/public/upload/test-image_1691523937920.png' - /product/64d29b62104fc6061dc5a0f3 - DELETE - ::1
+error: Apr-17-2024 01:55:19: 	200 - ENOENT: no such file or directory, unlink 'http://16.170.244.204/api/public/upload/test-image_1691605382829.png' - /product/64d3d986cedaeb6a3a1220d5 - DELETE - ::1
+error: Apr-17-2024 01:55:38: 	200 - ENOENT: no such file or directory, unlink 'http://16.171.142.31/public/upload/test-image_1691524496639.png' - /product/64d29d902ffa0a2e89f07cea - DELETE - ::1
+error: Apr-17-2024 01:56:07: 	200 - ENOENT: no such file or directory, unlink 'http://16.171.142.31/public/upload/test-image_1691524870039.png' - /product/64d29f06c81e5876e0a96ed1 - DELETE - ::1
+error: Apr-17-2024 01:56:26: 	200 - ENOENT: no such file or directory, unlink 'http://16.171.194.225/api/public/upload/test-image_1691555703279.png' - /product/64d31777c73046a7ec28ed68 - DELETE - ::1
+error: Apr-17-2024 01:56:42: 	200 - ENOENT: no such file or directory, unlink '/Users/skasifiqbal/Desktop/BackEnd Node JS/Project-2024/Ecommerce-Dummy/Controllers/public/upload/Screenshot_2024-04-17 at 1_1713297431891.png' - /product/661ed818b57c82185b374203 - DELETE - ::1
+error: Apr-17-2024 01:56:59: 	200 - ENOENT: no such file or directory, unlink 'Users/skasifiqbal/Desktop/BackEnd Node JS/Project-2024/Ecommerce-Dummy/Controllers/public/upload/Screenshot_2024-04-17 at 1_1713297658968.png' - /product/661ed8fb11e50dd0f68a9d37 - DELETE - ::1
+error: Apr-17-2024 02:07:09: 	500 - Token Is Missing - /product/get/selected?category=642ee132a6c2386bec1a1a7a,642ee1a4a6c2386bec1a1a83 - GET - ::1
+error: Apr-17-2024 02:11:49: 	401 - Token Validation Failed, User Not Authorized - /category/64d29988104fc6061dc5a0ef - DELETE - ::1
+error: Apr-17-2024 02:33:17: 	401 - Token Validation Failed, User Not Authorized - /product/get/featured - GET - ::1
+error: Apr-17-2024 02:38:17: 	404 - Category Not Found - /category/661ee8628da3cdaa68e28ee5 - GET - ::1
+error: Apr-17-2024 02:40:19: 	401 - Token Validation Failed, User Not Authorized - /order/get/history - GET - ::1
+error: Apr-17-2024 02:41:02: 	400 - shippingAddress Required - /order - POST - ::1
+error: Apr-17-2024 02:41:31: 	401 - Token Validation Failed, User Not Authorized - /order/allPlacedOrder - GET - ::1
+info: Apr-17-2024 02:42:01: 	200 - Admin: skasifiqbal786@gmail.com - View All The List Of User - /user - GET - ::1
+info: Apr-17-2024 02:49:44: 	200 - Admin: skasifiqbal786@gmail.com - View All The List Of User - /user - GET - ::1
+error: Apr-17-2024 02:52:06: 	401 - Token Validation Failed, User Not Authorized - /order/placeOrder?id=661eeb288da3cdaa68e28ef7 - PUT - ::1
+error: Apr-17-2024 02:54:16: 	401 - Token Validation Failed, User Not Authorized - /order/?id=661eeb288da3cdaa68e28ef7 - GET - ::1
+error: Apr-17-2024 02:57:21: 	401 - Token Validation Failed, User Not Authorized - /order/cancelOrder?id=661eeb288da3cdaa68e28ef7 - DELETE - ::1

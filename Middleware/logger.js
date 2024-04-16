@@ -13,7 +13,7 @@ const infoFilter = format((info, opts) => {
 
 const logDir = 'logs';
 const path=require("path")
-const file_name=path.join("/public",logDir,`server.log`)
+const file_name=path.join("public",logDir,`server.log`)
 
 
 
